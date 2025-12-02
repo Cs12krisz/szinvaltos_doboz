@@ -14,8 +14,8 @@ return (
 }
 const ColorBox = ({ colorName, colorValue, textColor }) => {
   return (
-    <div style={{ backgroundColor: colorValue, width: '200px', height: '200px', margin: '20px auto'}} className='container p-5 border'>
-      <p style={{ color: textColor, textAlign: 'center', textColor }}> Kiválasztott szín: {colorName}</p>
+    <div style={{ backgroundColor: colorValue, width: '200px', height: '200px', margin: '20px auto'}} className='container p-4 border'>
+      <p style={{ color: textColor}} className='py-5 text-center'> Kiválasztott szín: <br/>{colorName}</p>
     </div>
   );
 }
@@ -26,6 +26,8 @@ export const App = () => {
    {name: 'zöld', value: 'green', textColor: "white"},
    {name: 'kék', value: 'blue', textColor: "white"},
    {name: 'sárga', value: 'yellow', textColor: "black"},
+   {name: 'fehér', value: 'white', textColor: "black"},
+   {name: 'fekete', value: 'black', textColor: "white"},
    {name: 'rózsaszín', value: 'pink', textColor: "black"}
   ];
   return (
